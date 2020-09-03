@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Exercise 1</title>
+</head>
+<body>
+	<span id="Year"></span>-<span id="Month"></span>-<span id="Day"></span> <span id="Hour"></span>:<span id="Min"></span>:<span id="Sec"></span>
+	<script>
+
+		var date = new Date();
+		var year = date.getFullYear();
+		document.getElementById("Year").innerHTML = year;
+		var month = date.getMonth();
+		if(month < 10)
+		{
+			month = '0' + month;
+		}
+		document.getElementById("Month").innerHTML = month;
+		var day = date.getDate();
+		if(day < 10)
+		{
+			day = '0' + day;
+		}
+		document.getElementById("Day").innerHTML = day;
+		var hour = date.getHours();
+		if(hour < 10)
+		{
+			hour = '0' + hour
+		}
+		document.getElementById("Hour").innerHTML = hour;
+		var min = date.getMinutes();
+		if(min < 10)
+		{
+			min = '0' + min;
+		}
+		document.getElementById("Min").innerHTML = min;
+		var sec = date.getSeconds();
+		if(sec < 10)
+		{
+			sec = '0' + sec;
+		}
+		document.getElementById("Sec").innerHTML = sec;
+	</script>
+</body>
+</html>
