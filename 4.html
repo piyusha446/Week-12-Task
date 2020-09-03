@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 4</title>
+
+	<script type="text/javascript">
+		var btn = document.querySelector('button');
+		function random(number){
+			return Math.floor(Math.random()*(number+1));
+		}
+		function change(){
+			var col = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+			document.getElementById('p1').style.backgroundColor = col;
+		}
+	</script>
+</head>
+<body>
+	<p id="p1">The internet is a technology used by almost everyone around the world. This technology makes it possible for people to access valuable information through millions of sites that have been created by people willing to share there personal knowledge. This technology also allows people to communicate with one another either through email, instant messaging, or verbal chat. Telephone lines and coaxial cable make these connections possible. In this paper I will share with you the personal connection and social context this technology puts on me and other people around the world.</p>
+	<button onclick="change()">Change the background color of a paragraph. </button>
+</body>
+</html>
