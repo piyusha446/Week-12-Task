@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 5.b</title>
+	<script type="text/javascript">
+		function validate()
+		{
+			if(document.f1.pass1.value== document.f1.pass2.value)
+			{
+				alert("Password Matched");
+				return false;
+			}
+			else
+			{
+				alert("Password do not matched");
+				return true;
+			}
+		}
+	</script>
+</head>
+<body>
+	<form name="f1" onsubmit="validate();">
+		<input type="password" name="pass1"><br>Enter a password <br><br>
+		<input type="password" name="pass2"><br>Enter a password again<br><br>
+		<button type="submit">Validate</button>
+	</form>
+</body>
+</html>
